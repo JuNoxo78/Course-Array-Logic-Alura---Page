@@ -50,8 +50,6 @@ function initialConditions() {
 
 function randomNumberGenerator() {
     let generateNumber = Math.floor(Math.random() * maxNumber) + 1;
-    console.log(generateNumber);
-    console.log(outNumbers);
     if (outNumbers.includes(generateNumber)) {
         if (outNumbers.length < maxNumber) {
             return randomNumberGenerator();
